@@ -1,0 +1,12 @@
+#ifndef COMMONCODE_GLOBAL_H
+#define COMMONCODE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(COMMONCODE_LIBRARY)
+#define COMMONCODE_EXPORT Q_DECL_EXPORT
+#else
+#define COMMONCODE_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // COMMONCODE_GLOBAL_H
